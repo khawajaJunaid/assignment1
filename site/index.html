@@ -4,21 +4,53 @@
 <meta charset="utf-8">
 <title>The Box Model</title>
 <style>
+* {
+  box-sizing: border-box;
+  margin: 20;
+  padding: 40;
+}
 
 body {
   background-color: gray;
 }
 
+h1 {text-align: center;}
+
+
 #box {
-  background-color: blue;
+  box-align : top right;
+  background-color: gray;
+  padding: 0px;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  
 }
+#box1 {
+  float: right;
+  background-color: pink;
+  padding: 0px;
+  border: 1px solid black;
+  width: 100px;
+  height: 25px;
+  margin-bottom:  5px;
+  text-align: center;
+}
+
 #content {
-  background-color: #90EE90; /*green*/
+  background-color: green; /* green */
 }
 
 h1 {
   margin-bottom: 30px;
 }
+section
+{
+	clear:right;
+}
+
+
 
 </style>
 </head>
@@ -27,10 +59,39 @@ h1 {
 <h1>Box Model</h1>
 
 <div id="box">
-  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+
+  <div id="box1">
+  	Chicken
+  </div>
+
+  <section>
+  	<p id="content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.</p>
+  	 </section>
+
+</div>
+<div id="box">
+
+  <div id="box1">
+  	beef
+  </div>
+
+  <section>
+  	<p id="content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.</p>
+  	 </section>
+
+</div>
+<div id="box">
+
+  <div id="box1">
+  	sushi
+  </div>
+
+  <section>
+  	<p id="content" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.</p>
+  	 </section>
+
 </div>
 
 
 </body>
 </html>
-
