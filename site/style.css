@@ -37,15 +37,15 @@ span {
 	float: right; top :0; right: 0; margin: 0;
 	position: absolute;
 }
-#nr1 {
+#p1 {
 	background-color: rgb(250, 150, 150);
 	color: rgb(0, 0, 0);
 }
-#nr2 {
-	background-color: rgb(250, 0, 0);
+#p2 {
+	background-color: rgb(186, 69, 69);
 	color: rgb(250, 250, 250);
 }
-#nr3 {
+#p3 {
 	background-color: rgb(200, 200, 100);
 	color: rgb(0, 0, 0);
 }
@@ -60,7 +60,7 @@ span {
 @media (min-width: 992px) {
  
   .col-lg-4 {
-    width: 33.33%;
+    width: 33.3%;
     float: left;
 	}
 }
@@ -68,10 +68,11 @@ span {
 /* Tablet PC view */
 @media (min-width: 768px) and (max-width: 991px) {
  
-  .col-md-6 {
+ .col-lg-4 {
     width: 50%;
     float: left;
-  }
+	}
+
   .col-md-12 {
     width: 100%;
     float: left;
